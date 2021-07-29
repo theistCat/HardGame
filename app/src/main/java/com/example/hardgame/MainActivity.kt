@@ -123,7 +123,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     private fun parserData(): List<String> =
         requireNotNull(this).application.applicationContext.assets.open("game.txt")
             .bufferedReader().use { it.readText() }.split("\n")
